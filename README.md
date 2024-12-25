@@ -38,7 +38,30 @@ sudo apt update && sudo apt install cron
 
   1. Создайте папки для проекта и резервных копий
      ```mkdir -p ~/my_project ~/backups```
-  2.
+  2. Создайте скрипт для архивирования
+    ``` nano ~/backup_project.sh ```
+  3. Вставьте код
+ ```    #!/bin/bash
+     tar -czf ~/backups/my_project_$(date +\%Y-\%m-\%d).tar.gz ~/my_project
+ ```
+  4. сделайте скрипт исполняемым
+      ```
+       chmod +x ~/backup_project.sh
+      ```
+  5. Далее откройте crontab , при помощи строки  ```crontab -e ``` и добавьте строку   ``` 30 23 * * * ~/backup_project.sh ```
+  6.  Дождитесь запуска задания или выполните его вручную для проверки:
+      ```
+      ~/backup_project.sh
+      ```
+   ## Ссылки на материалы
+    
+       Официальная документация CRON
+       Введение в планировщик CRON
+       Команды Linux для работы с CRON
+ 
+
+
+
 
    
   
