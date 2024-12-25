@@ -54,10 +54,14 @@ sudo apt update && sudo apt install cron
       ~/backup_project.sh
       ```
    ## Ссылки на материалы
+
+   [Официальная документация CRON](https://help.ubuntu.ru/wiki/cron)
+   
+   [Введение в планировщик CRON](https://timeweb.com/ru/community/articles/chto-takoe-cron)
+   
+   [Команды Linux для работы с CRON](https://www.hostcms.ru/documentation/server/crontab/)
     
-       Официальная документация CRON
-       Введение в планировщик CRON
-       Команды Linux для работы с CRON
+       
  
 
 
